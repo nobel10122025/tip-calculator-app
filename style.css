@@ -1,0 +1,226 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    background:  hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+}
+.title-image{
+    background: url(images/logo.svg);
+    height: 3rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 48%;
+    top:4%;
+    position: absolute;
+}
+.container{
+    width:auto;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+input[type=button]{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border:0;
+    background-color: hsl(183, 100%, 15%);
+    color: #FFF;
+    padding: 0.2rem 0.2rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+input[type=button]:active{
+    background-color: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem 0.3rem;
+}
+.button-item.custom{
+    width: 3rem;
+
+}
+input{
+    margin: 0;
+    padding: 0.4rem;
+    outline: 0;
+    border: 2px solid hsl(172, 67%, 45%);
+    text-align: end;
+    width: 12rem;
+    border-radius: 0.2rem;
+}
+input[type = text]{
+    font-weight: bolder;
+    font-size: large;
+    color: hsl(183, 100%, 15%);
+}
+input:focus{
+    border: 2px solid hsl(183, 100%, 15%);
+}
+input::placeholder{
+    background-color: hsl(185, 41%, 84%);
+}
+input{
+    font-weight: 500;
+}
+#bill{
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+}
+#number{
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+}
+#billAmount , #totalAmount{
+    font-weight: 700;
+}
+#totalAmount{
+    margin-left: 3.5rem;
+}
+form{
+    padding: 1rem;
+    font-size: medium;
+}
+.warning{
+    font-size: 12px;
+    color: red;
+    padding-left: 1.6rem;
+    opacity: 0;
+}
+.warning.show{
+    opacity: 1; 
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+}
+.display-area{
+    background-color: hsl(183, 100%, 15%);
+    padding: 1rem 2rem;
+    color:hsl(0, 0%, 100%);
+    font-size:medium;
+    border-radius: 1rem;
+}
+.display-area p{
+    margin: 0;
+}
+.display-area-1{
+    display: flex;
+    margin:1.5rem 0.8rem; 
+}
+.display-area-1 > div{
+    font-weight: 700;
+}
+.display-area-1 span{
+    font-size: xx-large;
+    text-align: end;
+    margin-left: 3rem;
+    color: hsl(172, 67%, 45%);
+}
+.smalltext{
+    font-size:small ;
+    color: hsl(189, 41%, 97%) ;
+    display: block;
+    font-weight: lighter;
+    
+}
+.reset-button{
+    width:100%;
+    height: 1.6rem;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    font-weight: 700;
+    border-radius: 0.2rem;
+}
+.reset-button:hover{
+    background-color: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute; 
+    bottom: 5%;
+    left: 40%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:480px) {
+    .title-image{
+        height: 3rem;
+        width: 3rem;
+        left: 40%;
+        top:4%;
+        position: absolute;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:21%;
+        left:0;
+        transform: translate(0,0);
+        padding: 0;
+    }
+    input{
+        width: 11rem;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem 0.5rem;
+    }
+    input[type=button]{
+        padding: 0.2rem 0.2rem;
+        width: 6rem;
+        text-align: center;
+        cursor: pointer;
+    }
+    .button-item.custom{
+        width: 6rem;
+    }
+    #totalAmount{
+        margin-left: 5.0rem;
+    }
+    .display-area{
+        padding: 0.5rem ;
+        border-radius: 1rem;
+    }
+    .attribution { 
+        text-align: center;
+        position: absolute; 
+        bottom: -60%;
+        left: 5%;
+    }
+}
