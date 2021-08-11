@@ -29,7 +29,7 @@ Desktop view :
 ### Links
 
 - Solution URL: [Click here](https://github.com/nobel10122025/tip-calculator-app)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://nobel10122025.github.io/tip-calculator-app/index.html)
 
 ## My process
 
@@ -40,3 +40,4 @@ Desktop view :
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Javascript
