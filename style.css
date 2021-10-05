@@ -176,6 +176,12 @@ form{
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+.enter-button{
+    position: absolute;
+    bottom:15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @media (max-width:480px) {
     .title-image{
         height: 3rem;
@@ -192,6 +198,7 @@ form{
         left:0;
         transform: translate(0,0);
         padding: 0;
+        
     }
     input{
         width: 11rem;
@@ -222,5 +229,12 @@ form{
         position: absolute; 
         bottom: -60%;
         left: 5%;
+    }
+    .enter-button{
+        position: absolute;
+        bottom:-55%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: medium;
     }
 }

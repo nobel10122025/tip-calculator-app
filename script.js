@@ -19,14 +19,12 @@ for (let i=0;i<tipbuttons.length;i++){
             button.placeholder = "0";
             button.value="";
             buttonValue = show_percent();
-            console.log(buttonValue)
+            //console.log(buttonValue)
         }
     })
 }
 function show_percent(){
-    console.log(button.value)
     buttonValue=parseInt(button.value)
-
 }
 function show_number(){
 var noOfPersons = parseInt(document.getElementById("number").value)
